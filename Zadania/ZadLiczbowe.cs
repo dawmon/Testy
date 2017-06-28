@@ -9,5 +9,15 @@ namespace Zadania
     class ZadLiczbowe : Zadanie
     {
 
+        static int Znak()
+        {
+            int odp;
+            while (!int.TryParse (Console.ReadLine (), out odp))
+            {
+                Console.WriteLine("Nieprawidłowy znak. Proszę użyj cyfr");
+            }
+
+            return odp;
+        }
     }
 }
