@@ -29,7 +29,12 @@ namespace Zadania
         {
             Console.WriteLine(this.pyt);
             for (int i = 0; i < odp.Count(); i++)
+            {
+                Console.Write((char)(i+97));
+                Console.Write(" ");
                 Console.WriteLine(this.odp[i]);
+            }
+                
         }
     }
 }

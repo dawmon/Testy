@@ -16,10 +16,10 @@ namespace Egzamin
             //to majster widzisz ten komentarz? 
        
             Zadanie[] tabPyt = new Zadanie[2];
-            string[] odp1 = { "a. Antananarywa", "b. Warszawa", "c. Seul", "d. Moskwa" };
+            string[] odp1 = { "Antananarywa", "Warszawa", "Seul", "Moskwa" };
             tabPyt[0] = new ZadJednaOdp("Co jest stolicą Madagaskaru?", odp1);
             // tabPyt[0].wyswietl();
-            string[] odp2 = { "a. Radom", "b. Gniezno", "c. Kraków", "d. Warszawa" };
+            string[] odp2 = { "Radom", "Gniezno", "Kraków", "Warszawa" };
             tabPyt[1] = new ZadJednaOdp("Pierwsza stolica Polski", odp2);
             Test t1 = new Test(tabPyt);
             t1.wyswietlTest();
