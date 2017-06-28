@@ -16,10 +16,10 @@ namespace Zadania
             get { return odp; }
         }
 
-        public ZadJednaOdp(string tresc, List<string> odpo)
+        public ZadJednaOdp(string tresc, string[] odpo)
         {
             pyt = tresc;
-            odp = odpo;
+            odp = odpo.ToList();
         }
 
         public List<string> Odp
