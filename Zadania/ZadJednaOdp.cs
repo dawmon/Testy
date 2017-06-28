@@ -28,6 +28,21 @@ namespace Zadania
             set { odp.Add(value.ToString()); }
         }
 
+        private static void Print(string str)
+        {
+            Console.Write(str);
+            Console.WriteLine(" ");
+        }
+
+        public override void Wyswietl()
+        {
+            Console.Write(pyt);
+            Console.WriteLine(" ");
+            odp.ForEach(Print);
+
+            
+            
+        }
 
         /*
 
