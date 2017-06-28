@@ -8,6 +8,20 @@ namespace Zadania
 {
     public class ZadJednaOdp : Zadanie
     {
+        protected List<string> odp = new List<string>();        //odpowiedzi zadania
+        protected int nrPoprawnejOdp;                           //wskazane która z nich jest poprawna
+
+        public List<string> Odpowiedz
+        {
+            get { return odp; }
+        }
+
+
+
+
+
+        /*
+
         protected override bool sprPyt(string[] poprOdp)
         {
             if (this.odp == poprOdp)
@@ -18,7 +32,7 @@ namespace Zadania
 
         public ZadJednaOdp(string tresc, string[] odpowiedzi) : base(tresc, odpowiedzi) { }
 
-
+    */
 
 
     }

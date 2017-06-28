@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Zadania
 {
-    class ZadLiczbowe
+    class ZadLiczbowe : Zadanie
     {
+
     }
 }

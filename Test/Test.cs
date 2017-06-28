@@ -9,6 +9,8 @@ namespace NTest
 {
     public class Test
     {
+
+        /*
         public Zadanie[] listaPyt;
         public void wyswietlTest()
         {
@@ -25,5 +27,7 @@ namespace NTest
         {
             this.listaPyt = lista;
         }
+
+    */
     }
 }

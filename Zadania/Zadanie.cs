@@ -6,18 +6,23 @@ using System.Threading.Tasks;
 
 namespace Zadania
 {
-    public class Zadanie
+    public abstract class Zadanie
     {
+        protected string pyt;       //treść zadania
+        int maxPkt;                 //wartosc liczbowa mowiaca ile mozna zdobyc za zadanie max pkt
+        float zdobytePkt;           //wartosc liczbowa mowiaca ile uzytkownik zdobyl za to zadanie
 
-        //zmiana na życzenie
+        public string Pytanie
+        {
+            get { return pyt; }
+            set { pyt = value; }
+        }
 
-        protected string pyt;
-        //protected int ilePopr;
 
-        //do odpowiedniej klasy
-        protected string[] odp;
-        protected string poprOdp;
 
+
+        //
+        /*
         protected virtual bool sprPyt(string[] poprOdp) { return false; }
         public Zadanie(string tresc, string[] odpowiedzi)
         {
@@ -36,5 +41,7 @@ namespace Zadania
             }
                 
         }
+        
+    }*/
     }
 }
