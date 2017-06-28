@@ -8,31 +8,17 @@ namespace Zadania
 {
     class ZadLiczbowe : Zadanie
     {
-        /*  protected override bool sprPyt(string[] poprOdp)
-         {
-             if (this.odp == poprOdp)
-                 return true;    
-             else
-                 return false;
-         }*/
-        Random Losowaliczba = new Random();
-        int liczba1;
-        int liczba2;
-        public void liczby {
-            liczba1 = Losowaliczba.Next(51);
-            liczba2 = Losowaliczba.Next(51);
-        }
-        private bool odpowiedzi()
-        {
-            if ((liczba1 + liczba2 == suma.Value)
-                 (liczba1 - liczba2 == minus.Value)
-                 (liczba1 * liczba2 == mno.Value)
-                 (liczba1 / liczba2 == dzie.Value))
-                return true;
-            else
-                return false;
-        }
+        protected int odp; // odpowiedź
 
+        public ZadLiczbowe(string tresc, int odpP)
+        {
+            pyt = tresc;
+            odp = odpP;
+        }
+        public int odpP
+        {
+            get { return odp; }
+        }
 
         static int Znak()   //sprawdzamy czy wpisana odpowiedz w liczbowym jest cyfrą   
         {
@@ -45,4 +31,31 @@ namespace Zadania
             return odp;
         }
     }
+
+    /*  protected override bool sprPyt(string[] poprOdp)
+      {
+          if (this.odp == poprOdp)
+              return true;    
+          else
+              return false;
+      }
+
+     Random Losowaliczba = new Random();
+     int liczba1;
+     int liczba2;
+     public void liczby { 
+     liczba1 = Losowaliczba.Next(51);
+     liczba2 = Losowaliczba.Next(51);
+         }
+     private bool odpowiedzi()
+     {
+         if ((liczba1 + liczba2 == suma.Value)
+              (liczba1 - liczba2 == minus.Value)
+              (liczba1 * liczba2 == mno.Value)
+              (liczba1 / liczba2 == dzie.Value))
+             return true;
+         else
+             return false;
+     }*/
+
 }
