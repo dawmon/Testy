@@ -17,9 +17,14 @@ namespace Egzamin
 
             zad.Add(new ZadJednaOdp("Co jest stolicą Madagaskaru?", new string[] { "Antananarywa", "Warszawa", "Seul", "Moskwa" }));
             zad.Add(new ZadJednaOdp("Pierwsza stolica Polski",      new string[] { "Radom", "Gniezno", "Kraków", "Warszawa" }));
+            
 
-            zad.Last().Wyswietl();
 
+            //zad.Last().Wyswietl();
+
+            Test test = new Test(zad);
+
+            test.Wyswietl(zad);
 
             Console.ReadKey();
         }

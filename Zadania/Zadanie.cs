@@ -18,7 +18,7 @@ namespace Zadania
             set { pyt = value; }
         }
 
-        public virtual void Wyswietl() { }
+        public virtual string Wyswietl() { return null; }
 
 
         //

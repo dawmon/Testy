@@ -15,6 +15,7 @@ namespace Zadania
              else
                  return false;
          }*/
+         /*
         Random Losowaliczba = new Random();
         int liczba1;
         int liczba2;
@@ -32,7 +33,7 @@ namespace Zadania
             else
                 return false;
         }
-
+        */
 
         static int Znak()   //sprawdzamy czy wpisana odpowiedz w liczbowym jest cyfrą   
         {
@@ -44,5 +45,8 @@ namespace Zadania
 
             return odp;
         }
+
+
+        
     }
 }

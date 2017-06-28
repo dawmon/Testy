@@ -11,7 +11,20 @@ namespace NTest
     {
 
 
-        
+        public Test(IEnumerable<Zadanie> zad)
+        {
+
+        }
+
+
+        public void Wyswietl(List<Zadanie> zad)
+        {
+            for (int i = 0; i< zad.Count(); i++)
+            {
+                //Console.WriteLine(zad[i].Pytanie);
+                zad[i].Wyswietl();
+            }
+        }
 
         /*
         public Zadanie[] listaPyt;

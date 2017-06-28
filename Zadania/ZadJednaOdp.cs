@@ -11,11 +11,6 @@ namespace Zadania
         protected List<string> odp = new List<string>();        //odpowiedzi zadania
         protected int nrPoprawnejOdp;                           //wskazane która z nich jest poprawna
 
-        public List<string> Odpowiedz
-        {
-            get { return odp; }
-        }
-
         public ZadJednaOdp(string tresc, string[] odpo)
         {
             pyt = tresc;
@@ -28,35 +23,19 @@ namespace Zadania
             set { odp.Add(value.ToString()); }
         }
 
-        private static void Print(string str)
+        private string Print(string str)
         {
-            Console.Write(str);
-            Console.WriteLine(" ");
+            return str;
         }
 
-        public override void Wyswietl()
+        public override string Wyswietl()
         {
-            Console.Write(pyt);
-            Console.WriteLine(" ");
-            odp.ForEach(Print);
-
-            
-            
+            string str = null;
+            str += pyt;
+            str += " ";
+            str += odp.ForEach(Print);
+            return str;
         }
-
-        /*
-
-        protected override bool sprPyt(string[] poprOdp)
-        {
-            if (this.odp == poprOdp)
-                return true;
-            else
-                return false;
-        }
-
-        public ZadJednaOdp(string tresc, string[] odpowiedzi) : base(tresc, odpowiedzi) { }
-
-    */
 
 
     }
