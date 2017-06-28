@@ -8,6 +8,9 @@ namespace Zadania
 {
     public class Zadanie
     {
+
+        //zmiana na życzenie
+
         protected string pyt;
         //protected int ilePopr;
 
