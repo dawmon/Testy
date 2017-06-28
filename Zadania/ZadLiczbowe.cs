@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Zadania
 {
-    class ZadLiczbowe : Zadanie
+    /*class ZadLiczbowe : Zadanie
     {
         int odp;
         Random losowe = new Random();
@@ -26,5 +26,5 @@ namespace Zadania
 
             return odp;
         }
-    }
+    }*/
 }
