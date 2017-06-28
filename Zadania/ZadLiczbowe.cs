@@ -9,10 +9,10 @@ namespace Zadania
     class ZadLiczbowe : Zadanie
     {
 
-        static int Znak()
+        static int Znak()   //sprawdzamy czy wpisana odpowiedz w liczbowym jest cyfrą   
         {
-            int odp;
-            while (!int.TryParse (Console.ReadLine (), out odp))
+            int odp;    
+            while (!int.TryParse (Console.ReadLine (), out odp))  //fosujemy użycie cyfry 
             {
                 Console.WriteLine("Nieprawidłowy znak. Proszę użyj cyfr");
             }
