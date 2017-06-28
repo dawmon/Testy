@@ -23,8 +23,14 @@ namespace Zadania
             set { odp.Add(value.ToString()); }
         }
 
-        private string Print(string str)
+        private string Print(List<string> st)
         {
+            string str = null;
+            foreach (string cos in st)
+            {
+                str += st;
+                str += Environment.NewLine;
+            }
             return str;
         }
 
@@ -33,7 +39,7 @@ namespace Zadania
             string str = null;
             str += pyt;
             str += " ";
-            str += odp.ForEach(Print);
+            str += Print(odp);
             return str;
         }
 

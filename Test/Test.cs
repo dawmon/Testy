@@ -17,13 +17,15 @@ namespace NTest
         }
 
 
-        public void Wyswietl(List<Zadanie> zad)
+        public string Wyswietl(List<Zadanie> zad)
         {
+            string str = null;
             for (int i = 0; i< zad.Count(); i++)
             {
                 //Console.WriteLine(zad[i].Pytanie);
-                zad[i].Wyswietl();
+                str += zad[i].Wyswietl();
             }
+            return str;
         }
 
         /*

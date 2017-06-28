@@ -24,7 +24,7 @@ namespace Egzamin
 
             Test test = new Test(zad);
 
-            test.Wyswietl(zad);
+            Console.Write(test.Wyswietl(zad));
 
             Console.ReadKey();
         }
