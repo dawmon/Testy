@@ -14,9 +14,14 @@ namespace Egzamin
         {
 
             //ja tam wole listy 
-            List<Zadanie> zadania = new List<Zadanie>();
+            //List<Zadanie> zadania = new List<Zadanie>();
+
+            Test test = new Test();
 
 
+            List<Zadanie> jebac = new List<Zadanie>();
+
+            jebac.Add(new ZadJednaOdp("zupa"));
 
 
             /*
@@ -34,6 +39,10 @@ namespace Egzamin
 
             t1.wyswietlTest();
             */
+
+
+
+
 
             Console.ReadKey();
         }

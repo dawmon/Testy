@@ -16,6 +16,10 @@ namespace Zadania
             get { return odp; }
         }
 
+        public ZadJednaOdp(string tresc)
+        {
+            pyt = tresc;
+        }
 
 
 
