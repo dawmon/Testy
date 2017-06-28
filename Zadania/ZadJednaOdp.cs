@@ -28,8 +28,8 @@ namespace Zadania
             string str = null;
             foreach (string cos in st)
             {
-                str += st;
                 str += Environment.NewLine;
+                str += cos;
             }
             return str;
         }
@@ -40,6 +40,7 @@ namespace Zadania
             str += pyt;
             str += " ";
             str += Print(odp);
+            str += Environment.NewLine;
             return str;
         }
 
