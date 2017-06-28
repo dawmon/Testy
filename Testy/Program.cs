@@ -12,6 +12,8 @@ namespace Egzamin
     {
         static void Main(string[] args)
         {
+
+            //to majster widzisz ten komentarz? 
        
             Zadanie[] tabPyt = new Zadanie[2];
             string[] odp1 = { "a. Antananarywa", "b. Warszawa", "c. Seul", "d. Moskwa" };
