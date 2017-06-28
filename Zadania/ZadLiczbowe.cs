@@ -6,16 +6,15 @@ using System.Threading.Tasks;
 
 namespace Zadania
 {
-    /*class ZadLiczbowe : Zadanie
+    class ZadLiczbowe : Zadanie
     {
-        int odp;
-        Random losowe = new Random();
-        int liczba01 = losowe.Next(11);
-        int liczba02 = losowe.Next(11);
-        
-        if (liczba01 * liczba02 == odp)
-
-
+         protected override bool sprPyt(string[] poprOdp)
+        {
+            if (this.odp == poprOdp)
+                return true;
+            else
+                return false;
+        }
     static int Znak()   //sprawdzamy czy wpisana odpowiedz w liczbowym jest cyfrą   
         {
             int odp;    
@@ -26,5 +25,5 @@ namespace Zadania
 
             return odp;
         }
-    }*/
+    }
 }
