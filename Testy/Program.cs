@@ -13,16 +13,12 @@ namespace Egzamin
         static void Main(string[] args)
         {
 
-            //ja tam wole listy 
-            //List<Zadanie> zadania = new List<Zadanie>();
+            List<Zadanie> zad = new List<Zadanie>();
+            List<string> tmp = new List<string>();
+            tmp.Add("Antananarywa");
 
-            Test test = new Test();
-
-
-            List<Zadanie> jebac = new List<Zadanie>();
-
-            jebac.Add(new ZadJednaOdp("zupa"));
-
+            zad.Add(new ZadJednaOdp("Co jest stolicą Madagaskaru?",  ));
+           
 
             /*
             //to majster widzisz ten komentarz? 

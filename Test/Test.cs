@@ -10,10 +10,7 @@ namespace NTest
     public class Test
     {
 
-        List<Zadanie> kurwa = new List<Zadanie>();
 
-        
-        kurwa.Add(new ZadJednaOdp("zupa"));
         
 
         /*

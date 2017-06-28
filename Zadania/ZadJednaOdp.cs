@@ -16,12 +16,17 @@ namespace Zadania
             get { return odp; }
         }
 
-        public ZadJednaOdp(string tresc)
+        public ZadJednaOdp(string tresc, List<string> odpo)
         {
             pyt = tresc;
+            odp = odpo;
         }
 
-
+        public List<string> Odp
+        {
+            get { return odp; }
+            set { odp.Add(value.ToString()); }
+        }
 
 
         /*
