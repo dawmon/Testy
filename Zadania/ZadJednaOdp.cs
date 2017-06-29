@@ -11,10 +11,11 @@ namespace Zadania
         protected List<string> odp = new List<string>();        //odpowiedzi zadania
         protected int nrPoprawnejOdp;                           //wskazane która z nich jest poprawna
 
-        public ZadJednaOdp(string tresc, string[] odpo)
+        public ZadJednaOdp(string tresc, string[] odpo, int val)
         {
             pyt = tresc;
             odp = odpo.ToList();
+            nrPoprawnejOdp = val;
         }
 
         public List<string> Odp
@@ -26,9 +27,14 @@ namespace Zadania
         private string Print(List<string> st)
         {
             string str = null;
+            int i = 0;
+            char ch;
             foreach (string cos in st)
             {
                 str += Environment.NewLine;
+                ch = (char)(i++ + 97);
+                str += ch.ToString();
+                str += ") ";
                 str += cos;
             }
             return str;
@@ -44,6 +50,19 @@ namespace Zadania
             return str;
         }
 
+        /* zaczatek do sprawdzania z tekstem
+        public override int Sprawdz(string str)
+        {
+            string i;
+            i = odp.Find(x => x == str);
+            return 1;
+        }
+        */
+
+        public override int Sprawdz(string str)
+        {
+            if ((int)str[0]
+        }
 
     }
 }

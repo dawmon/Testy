@@ -15,8 +15,8 @@ namespace Egzamin
 
             List<Zadanie> zad = new List<Zadanie>();
 
-            zad.Add(new ZadJednaOdp("Co jest stolicą Madagaskaru?", new string[] { "Antananarywa", "Warszawa", "Seul", "Moskwa" }));
-            zad.Add(new ZadJednaOdp("Pierwsza stolica Polski",      new string[] { "Radom", "Gniezno", "Kraków", "Warszawa" }));
+            zad.Add(new ZadJednaOdp("Co jest stolicą Madagaskaru?", new string[] { "Antananarywa", "Warszawa", "Seul", "Moskwa" }, 1));
+            zad.Add(new ZadJednaOdp("Pierwsza stolica Polski",      new string[] { "Radom", "Gniezno", "Kraków", "Warszawa" }, 2));
             
 
 
@@ -25,6 +25,8 @@ namespace Egzamin
             Test test = new Test(zad);
 
             Console.Write(test.Wyswietl(zad));
+
+            zad.Last().Sprawdz("Warszawaa");
 
             Console.ReadKey();
         }

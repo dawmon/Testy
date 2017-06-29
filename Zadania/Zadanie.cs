@@ -10,7 +10,6 @@ namespace Zadania
     {
         protected string pyt;       //treść zadania
         int maxPkt;                 //wartosc liczbowa mowiaca ile mozna zdobyc za zadanie max pkt
-        float zdobytePkt;           //wartosc liczbowa mowiaca ile uzytkownik zdobyl za to zadanie
 
         public string Pytanie
         {
@@ -20,6 +19,7 @@ namespace Zadania
 
         public virtual string Wyswietl() { return null; }
 
+        public virtual int Sprawdz(string str) { return 0; }
 
         //
         /*
