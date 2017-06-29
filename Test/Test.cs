@@ -22,7 +22,6 @@ namespace NTest
             string str = null;
             for (int i = 0; i< zad.Count(); i++)
             {
-                //Console.WriteLine(zad[i].Pytanie);
                 str += zad[i].Wyswietl();
             }
             return str;
