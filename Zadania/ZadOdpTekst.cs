@@ -8,35 +8,12 @@ namespace Zadania
 {
     class ZadOdpTekst : Zadanie
     {
-        protected string odp;
-
-        /*
-        public Porownaj(string odp, string odpo)
+        protected List<string> odp = new List<string>();
+        public override int Sprawdz(string str)
         {
-         
-        }
-        public string odpo
-        {
-            get { return odp; }
-            set { odp = value; }
-        }
-        private string odp;
-        public static int Porownaj(
-        
-        bool ignoreCase
-         )  
-
-        public ZadOdpTekst(string tresc, string[] odpo)
-        {
-            pyt = tresc;
-            if (this.odp == odpo)
-            {
-                return true;
-                    else
-                return false;
-            }
-        }
-        */
-
+            string i;
+            i = odp.Find(x => x == str);
+            return 1;
+        }  
     }
 }
