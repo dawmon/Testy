@@ -9,6 +9,8 @@ namespace Zadania
     class ZadOdpTekst : Zadanie
     {
         protected string odp;
+
+        /*
         public Porownaj(string odp, string odpo)
         {
          
@@ -34,6 +36,7 @@ namespace Zadania
                 return false;
             }
         }
+        */
 
     }
 }

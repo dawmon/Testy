@@ -61,7 +61,10 @@ namespace Zadania
 
         public override int Sprawdz(string str)
         {
-            if ((int)str[0]
+            if ((int)(str[0] - 97) == nrPoprawnejOdp)
+                return 1;
+            else
+                return 0;
         }
 
     }
